@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <time.h>
+#include <stdlib.h>
+#include <conio.h>
 
 /**
  * main - Entry point
@@ -8,9 +10,7 @@
  */
 int main(void)
 {
-	int n;
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
+	int n = rand();
 	if (n>0)
 	{
 		printf("%d is positive\n",n);
