@@ -12,12 +12,12 @@ int main(void)
 
 	char upper = 'A';
 
-	while(lower <= 'z')
+	while (lower <= 'z')
 	{
 		printf("%c", lower);
 		lower++;
 	}
-	while(upper <= 'Z')
+	while (upper <= 'Z')
 	{
 		printf("%c", upper);
 		upper++;
