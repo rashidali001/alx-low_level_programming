@@ -13,8 +13,9 @@ int main(void)
 
 	while (alpha <= 'z')
 	{	
-		printf("%c\n", alpha);
+		printf("%c", alpha);
 		alpha++;
 	}
+	printf("\n");
 	return (0);
 }
