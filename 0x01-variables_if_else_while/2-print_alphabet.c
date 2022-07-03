@@ -4,7 +4,7 @@
 /**
  * main - Entry point
  *
- * Return : ALWAYS 0 (Success)
+ * Return: 0 (Success)
  */
 int main(void)
 {
@@ -12,7 +12,7 @@ int main(void)
 
 
 	while (alpha <= 'z')
-	{	
+	{
 		printf("%c", alpha);
 		alpha++;
 	}
