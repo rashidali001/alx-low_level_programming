@@ -1,4 +1,6 @@
 #include <unistd.h>
+#ifndef _MAIN_H
+#define _MAIN_H
 
 /**
  * _putchar - write the character c to stdout
@@ -11,3 +13,4 @@ int _putchar(char c)
 {
  return (write(1, &c, 1));
 }
+#endif
