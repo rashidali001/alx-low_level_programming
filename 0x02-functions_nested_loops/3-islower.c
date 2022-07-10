@@ -8,13 +8,12 @@
  */
 int _islower(int c)
 {
-	int arg = c;
-	if (islower(arg))
+	int i;
+
+	for  (i = 'a'; i <= 'z'; i++)
 	{
-		return 1;
+		if (c == i)
+			return (1);
 	}
-	else
-	{
-		return 0;
-	}
+	return (0);
 }

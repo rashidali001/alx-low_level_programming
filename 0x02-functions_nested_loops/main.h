@@ -29,4 +29,11 @@ void print_alphabet_x10(void);
  * followed by newline
  */
 
+int _islower(int c);
+
+/**
+ * _islower - checks for lowercase
+ */
+
+
 #endif
