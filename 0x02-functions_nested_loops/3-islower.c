@@ -3,6 +3,7 @@
 
 /**
  * _islower - checks to see if letter is lowercase
+ * @c: integer input
  *
  * Return: 1 to show lowercase, 0 to show not lowercase
  */
