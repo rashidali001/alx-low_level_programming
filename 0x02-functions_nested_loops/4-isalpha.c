@@ -9,7 +9,8 @@
  */
 int _isalpha(int c)
 {
-	int i, j;
+	int i;
+	int j;
 
 	if (i = 'a'; i <= 'z'; i++)
 	{
