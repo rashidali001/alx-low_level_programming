@@ -41,4 +41,11 @@ int _isalpha(int c);
  * _isalpha - checks for alphabet
  */
 
+int print_sign(int n);
+
+/**
+ * print_sign - checks and prints sign of a number
+ */
+
+
 #endif
