@@ -35,5 +35,10 @@ int _islower(int c);
  * _islower - checks for lowercase
  */
 
+int _isalpha(int c);
+
+/**
+ * _isalpha - checks for alphabet
+ */
 
 #endif
