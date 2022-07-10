@@ -9,17 +9,16 @@
  */
 int _isalpha(int c)
 {
-	int i;
-	int j;
+	int alpha;
 
-	if (i = 'a'; i <= 'z'; i++)
+	if (alpha = 'a'; alpha <= 'z'; alpha++)
 	{
-		if (i == c)
+		if (alpha == c)
 			return (1);
 	}
-	if (j = 'A'; j <= 'Z'; j++)
+	if (alpha = 'A'; alpha <= 'Z'; alpha++)
 	{
-		if (j == c)
+		if (alpha == c)
 			return (1);
 	}
 	return (0);
