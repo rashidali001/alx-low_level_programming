@@ -2,6 +2,7 @@
 
 /**
  * reset_to_98 - updates the value
+ * @n: point to integer
  *
  * Return: void
  */
