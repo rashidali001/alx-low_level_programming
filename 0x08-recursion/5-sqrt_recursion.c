@@ -18,7 +18,7 @@ int _this_is_root(int n, int is_root)
 }
 
 /**
- * __sqrt_recursion - call this is root fn
+ * _sqrt_recursion - call this is root fn
  * @n: integer
  *
  * Return: integer
