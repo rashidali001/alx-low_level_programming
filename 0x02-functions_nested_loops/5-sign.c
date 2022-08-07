@@ -4,9 +4,7 @@
  * print_sign - checks and prints sign
  * @n: integer input
  *
- * Return: 1 and prints + if n is greater than zero
- * Return: 0 and prints 0 if n is zero
- * Return: -1 and prints - if n is less than zero
+ * Return: 1
  */
 int print_sign(int n)
 {
@@ -20,7 +18,7 @@ int print_sign(int n)
 		_putchar('0');
 		return (0);
 	}
-	
+
 		_putchar('-');
 		return (-1);
 
