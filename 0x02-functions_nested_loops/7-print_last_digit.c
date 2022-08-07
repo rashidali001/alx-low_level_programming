@@ -8,13 +8,15 @@
  */
 int print_last_digit(int para)
 {
-	if (para < 0)
+	int last = para % 10;
+
+	if (last < 0)
 	{
-		para *= -1;
-		_putchar((para % 10) + '0');
-		return (para % 10);
+		last *= -1;
+		_putchar(last + '0');
+		return (last);
 	}
-	_putchar((para % 10) + '0');
-	return (para % 10);
+	_putchar(last + '0');
+	return (last);
 }
 
