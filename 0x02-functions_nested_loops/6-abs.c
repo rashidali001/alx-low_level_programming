@@ -7,7 +7,7 @@
  */
 int  _abs(int para)
 {
-	int parameter  = int para;
+	int parameter  = para;
 
 	if (parameter < 0)
 		parameter = 0 - parameter;
