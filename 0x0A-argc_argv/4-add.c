@@ -7,7 +7,7 @@
  *
  * Return: integer
  */
-int main(__noerr int argc, __noerr char *argv[])
+int main(int argc, char *argv[])
 {
 	int i;
 	int sum = 0;
