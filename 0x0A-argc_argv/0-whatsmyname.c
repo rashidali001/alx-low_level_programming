@@ -2,13 +2,14 @@
 
 /**
  * main - entry point
- * @argc: number of parameters
- * @argv: array of parameters
+ * @argc: parameter count
+ * @argv: array of parameter
  *
  * Return: integer
  */
-int main(int argc, __noerr char *argv[])
+
+int main(int argc, char *argv[])
 {
-	printf("%s",argv[0]);
+	printf("%s\n",argv[0]);
 	return (0);
 }
