@@ -15,7 +15,7 @@ int main(__noerr int argc, __noerr char *argv[])
 
 	if (argc == 1)
 	{
-		printf("0");
+		printf("0\n");
 		return (0);
 	}
 	for (i = 1; i < argc; i++)
