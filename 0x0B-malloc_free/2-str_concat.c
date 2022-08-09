@@ -27,28 +27,31 @@ int getsize(char *s1)
  */
 char *str_concat(char *s1, char *s2)
 {
-	int size1 = getsize(s1);
-	int size2 = getsize(s2);
-	int totalsize = size1 + size2;
-	char con_cat[15];
 	int a,b;
 	char *strout;
 
+	if (s1 == NULL)
+		s1 = "";
+
+	if (s2 == NULL)
+		s2 = "";
+
+	int size1 = getsize(s1);
+	int size2 = getsize(s2);
+	strout = malloc(sizeof(char) * (size1 + size2 + 1);
+
+	if (strout == NULL)
+	{
+		free(strout);
+		return (NULL);
+	}
 	for (a = 0; a <= size1; a++)
-	{
-		con_cat[a] = s1[a];
-	}
+		strout[a] = s1[a];
+
 	b = size1;
-	for (a = 0; a <= size2; a++)
-	{
-		con_cat[b] = s2[a];
-		b++;
-	}
-	strout = malloc(sizeof(char) * totalsize);
-	for (a = 0; a <= totalsize; a++)
-	{
-		strout[a] = con_cat[a];
-	}
+	for (b = 0; b <= size2; a++, b++)
+		strout[a] = s2[b];
+
 	return (strout);
 }
 
