@@ -30,7 +30,7 @@ char *str_concat(char *s1, char *s2)
 	int size1 = getsize(s1);
 	int size2 = getsize(s2);
 	int totalsize = size1 + size2;
-	char con_cat[totalsize];
+	char con_cat[15];
 	int a,b;
 	char *strout;
 
