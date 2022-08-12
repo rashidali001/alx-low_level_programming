@@ -1,5 +1,5 @@
-#ifndef _LIST_H
-#define _LIST_H
+#ifndef _LISTS_H
+#define _LISTS_H
 
 #define NIL "(nil)"
 #define END '\0'
