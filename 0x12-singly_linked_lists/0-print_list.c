@@ -1,11 +1,11 @@
 #include "lists.h"
 
 /**
- * print_list - entry point
- * @h: linked list
+ *print_list - entry point
+ *@h: linked list
  *
- * Return: number of nodes
- * */
+ *Return: number of nodes
+ */
 size_t print_list(const list_t *h)
 {
 	unsigned int count = 0;
