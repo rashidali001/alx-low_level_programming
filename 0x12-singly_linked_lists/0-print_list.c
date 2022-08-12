@@ -1,8 +1,8 @@
 #include "lists.h"
 
 /**
- *print_list - entry point
- *@h: linked list
+ *print_list - linked list
+ *@h: pointer to head
  *
  *Return: number of nodes
  */
