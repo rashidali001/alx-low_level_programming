@@ -7,11 +7,11 @@ NAME = school
 all:${OBJ}
 	${CC} ${OBJ} -o ${NAME}
 clean:
-	${RM} *~ school
+	${RM} *~ ${NAME}
 oclean:
 	${RM} ${OBJ}
-fclean:
-	${RM} *~ school
-	${RM} ${OBJ}
+
+fclean:clean oclean
+
 re:oclean all
 
