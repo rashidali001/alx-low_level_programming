@@ -1,0 +1,15 @@
+CC = gcc
+NAME = school
+SRCS = main.c school.c
+OBJ = $(SRCS:%.c=%.o)
+
+all: build execute
+
+build: ${SRCS}
+
+%:%.c
+	${CC} -c -o $<
+
+execute: ${OBJ}
+	${CC} ${OBJ} -o ${NAME}
+
