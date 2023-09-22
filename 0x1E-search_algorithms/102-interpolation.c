@@ -1,44 +1,45 @@
 #include "search_algos.h"
 
 /**
- * interpolation_search -  a function that searches for a value
- * in a sorted array of integers using Interpolation search algorithm
- *
- * @array: is a pointer to the first element of the array to search in
- * @size:  is the number of elements in array
- * @value:  is the value to search for
- *
- * Return: the first index where value is located
+ * print_i - helper func to print idx each check
+ * @array: array
+ * @i: index checked
+ */
+void print_i(int *array, size_t i)
+{
+	printf("Value checked array[%lu] = [%d]\n", i, array[i]);
+}
+
+/**
+ * interpolation_search - like binary search, but use idx based on formula
+ * @array: given array of ints
+ * @size: size of array
+ * @value: value to search for
+ * Return: index at which value's found
  */
 int interpolation_search(int *array, size_t size, int value)
 {
-int start = 0, end = size - 1, mid;
+	size_t l = 0;
+	size_t r = size - 1;
+	size_t pos;
 
 	if (array == NULL)
 		return (-1);
 
-	while (array[end] != array[start])
+	pos = l + (((double)(r - l) / (array[r] - array[l]))
+		   * (value - array[l]));
+	while (pos < size)
 	{
-		mid = start + (
-			(value - array[start]) * (end - start) / (array[end] - array[start])
-		);
-
-		if (mid > (int) size)
-		{
-			printf("Value checked array[%d] is out of range\n", mid);
-			return (-1);
-		}
-
-		printf("Value checked array[%d] = [%d]\n", mid, array[mid]);
-
-		if (value == array[mid])
-			return (mid);
-		else if (value < array[mid])
-			end = mid - 1;
+		print_i(array, pos);
+		if (array[pos] == value)
+			return (pos);
+		else if (array[pos] < value)
+			l = pos + 1;
 		else
-			start = mid + 1;
+			r = pos - 1;
+		pos = l + (((double)(r - l) / (array[r] - array[l]))
+			   * (value - array[l]));
 	}
-
+	printf("Value checked array[%lu] is out of range\n", pos);
 	return (-1);
-
 }
